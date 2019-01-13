@@ -1,0 +1,19 @@
+
+.locationList {
+    height: 85vh;
+    overflow: auto; /* Permite que se muestre la barra scroll */
+}
+
+@media (max-width: 65em) {
+    .locationList {
+        max-height: 45vh; /* Se pone un 30% de la pantalla que se ve */
+        overflow: auto; /* Permite que se muestre la barra scroll */
+        margin-bottom: 20px;  /* Distancia con de los bloques */
+    }
+}
+.forecast-title {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

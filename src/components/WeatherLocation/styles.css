@@ -1,0 +1,25 @@
+.locationCont{
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    color: #888;
+    line-height: 35px;
+    overflow: hidden; /* Altera la manera que se manejan los scrollbar */
+}
+
+.locationCont h1{
+    margin: 0;
+    white-space: nowrap; /* Permite que no se quebra el titulo de cada location */
+}
+
+.weatherLocationCont {
+    width: calc(100% - 20px); /* Permite calcular un tamaño de ancho 100% del ancho - 20 px */
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 350px; /* Cuando se vaya reduciendo el tamaño llege hasta cierto punto y no se rompa */
+    box-sizing: border-box; 
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+    cursor: pointer; /* Muestre mano al pasar el puntero  */
+}
