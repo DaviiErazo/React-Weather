@@ -12,7 +12,7 @@ const  transformForecast = data => (
 // Función de transformación (map), la cual espera una función encargada de realizar la transformación de cada uno de los elementos del array
     )).map(item => ( 
         {        
-            weekDay : moment.unix(item.dt).utc().format('ddd'),
+            weekday : moment.unix(item.dt).utc().format('ddd'),
             hour: moment.unix(item.dt).utc().hour(),
             data : transformWeather(item)
         }        

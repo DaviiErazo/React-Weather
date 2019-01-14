@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ForecastItem from './ForecastItem'
 import './styles.css'
 import transformForecast from './../services/transformForecast'
-//import WeatherData from './WeatherLocation/WeatherData';
+// import WeatherData from './WeatherLocation/WeatherData';
 
 /*
 const days = [
@@ -51,9 +51,7 @@ class ForecastExtended extends Component {
             data => (data.json())        
         ).then(
             weather_data => {
-                console.log(weather_data);
                 const forecastData = transformForecast(weather_data);
-                console.log(forecastData);
                 this.setState({ forecastData });
             }
         )
@@ -65,8 +63,8 @@ class ForecastExtended extends Component {
        return(
             forecastData.map(forecast => (
                 <ForecastItem 
-                    key={`${forecast.weekDay}${forecast.hour}`}
-                    weekDay = {forecast.weekDay}
+                    key={`${forecast.weekday}${forecast.hour}`}
+                    weekday = {forecast.weekday}
                     hour = {forecast.hour}
                     data = {forecast.data}
                 />
